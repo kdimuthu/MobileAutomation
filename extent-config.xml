@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <!-- report theme -->
+        <!-- standard, dark -->
+        <theme>dark</theme>
+    
+        <!-- document encoding -->
+        <!-- defaults to UTF-8 -->
+        <encoding>UTF-8</encoding>
+        
+        <!-- protocol for script and stylesheets -->
+        <!-- defaults to https -->
+        <protocol>http</protocol>
+        
+        <!-- title of the document -->
+        <documentTitle>SLT-OTT-Automation Execution Report</documentTitle>
+        
+        <!-- report name - displayed at top-nav -->
+        <reportName>SLT OTT-Automation Execution Report
+         <![CDATA[
+                <img src='https://drive.google.com/file/d/1MQHr9fY-h40SCiFkK13xwZ_YoHtYUT5G/view?usp=sharing'/>
+            ]]>
+        </reportName>        
+        
+        <!-- location of charts in the test view -->
+        <!-- top, bottom -->
+        <testViewChartLocation>top</testViewChartLocation>
+      
+        <!-- custom javascript -->
+        <scripts>
+            <![CDATA[
+                $(document).ready(function() {
+                   
+                });
+                
+                $( ".left.panel-name" ).replaceWith( "<h2>Execution Summary</h2>" );
+                $( ".subview-left .view-summary h5" ).replaceWith( "<h5>View Summary</h5>" );
+                
+               
+                
+                
+            ]]>
+        </scripts>      
+        
+        <!-- custom styles -->
+        <styles>
+            <![CDATA[
+                .report-name { padding-left: 10px; } .report-name img{position: absolute;left: 0; width: 116px;} #slide-out, .brand-logo.blue, #theme-selector span{display:none;}
+                .subview-right{position: absolute; right: 0px;} nav .nav-wrapper{text-align: center;} .container{padding-left: 0;} .controls.grey{display: none;}
+                .report-name{font-size: 24px; padding-left: 147px; font-weight: 600; color: #a2a2a2;} #nav-mobile li:nth-child(2){display: none;}
+                .np-h:nth-child(2){display: none;} #parent-analysis{width: 150px !important; height: auto !important;}
+                .dark .card-panel:not(.transparent):first-child{background-color: #111111 !important;} .strong{display: block;}
+                .text-small .strong{display: block !important; color: #ffffff; visibility: visible !important;}
+                .text-small{color: #111111; visibility: hidden;}
+                .card-panel .block .tooltipped .strong::before{content: "Passed : " !important; color: #ffffff !important; background: #00c853 !important; padding: 2px 5px; margin-right: 10px; border-radius: 3px; min-width: 80px !important;display: inline-block;}
+                .card-panel .block .strong:first-child::before{content: "Failed : "; color: #ffffff !important; background: #ef5350; padding: 2px 5px; margin-right: 10px; border-radius: 3px; min-width: 80px !important;display: inline-block;}
+                .card-panel .block .strong:nth-child(2)::before{content: "Skipped : "; color: #ffffff !important; background: #dbd114; padding: 2px 5px; margin-right: 10px; border-radius: 3px; min-width: 80px !important;display: inline-block;}
+                #charts-row .card-panel{height:auto !important;} .card-panel h2{font-size: 22px; text-align: center;} #parent-analysis{margin-left: 40px;}
+                .chart-box{margin-bottom: -116px !important;} .view-summary h5{font-size: 20px;} .test-time-info, #step-filters{display: none;}
+                body{border: 5px solid #535a9b;}
+
+            ]]>
+        </styles>
+    </configuration>
+</extentreports>
